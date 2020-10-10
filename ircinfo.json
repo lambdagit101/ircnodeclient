@@ -1,5 +1,9 @@
 {
 	"nickname": "Anonymous",
-	"server": "hostsailor.ro.quakenet.org",
-	"channel": "#assaultcube"
+	"server": "irc.freenode.net",
+	"ircport": 6667,
+	"channel": "#freenode", 
+	"realname": "ircnodeclient IRC client",
+	"username": "ircnodecl",
+	"commandprefix": "!"
 }
