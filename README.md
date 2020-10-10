@@ -6,8 +6,8 @@ This is a simple IRC client I made in a few minutes using node-irc and prompt
 ---
 ### How do I use this?
 First, clone the repo into a folder or download the code and put it in a folder, then execute the following commands on the folder:
-`npm install [irc](https://www.npmjs.com/package/irc)`
-`npm install [prompt](https://www.npmjs.com/package/prompt)`
+`npm install irc`
+`npm install prompt`
 ---
 ### I am only able to access #assaultcube from server hostsailor.ro.quakenet.org with name Anonymous!
 That means you did not modify the ircinfo.json file. That is the configuration file.
