@@ -1,4 +1,4 @@
-**ircnodeclient**
+# ircnodeclient
 
 ###### Simple IRC Client made with Node.js and node-irc
 ---
