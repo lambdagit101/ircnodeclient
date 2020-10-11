@@ -16,4 +16,6 @@
 ---
 ### I cannot answer PM's! ###
 ###### For now, you can't. This feature might come another day.
-
+---
+### I am not on the server and channel I want! ###
+###### By default, ircinfo.json specifies the irc.freenode.net servers with the channel #freenode and the nickname Anonymous. You can change that in ircinfo.json.
