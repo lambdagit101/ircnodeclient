@@ -19,3 +19,7 @@
 ---
 ### I am not on the server and channel I want! ###
 ###### By default, ircinfo.json specifies the irc.freenode.net servers with the channel #freenode and the nickname Anonymous. You can change that in ircinfo.json.
+---
+### How do I customize the client more? ###
+###### You can change the real name in ircinfo.json, altough, there is a 9-character limit.
+###### You can also change the username to anything you want.
