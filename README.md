@@ -10,14 +10,24 @@
 ###### `npm install irc`
 ###### `npm install prompt`
 ---
-### I am only able to access #assaultcube from server hostsailor.ro.quakenet.org with name Anonymous! ###
-###### That means you did not modify the ircinfo.json file. That is the configuration file.
-###### Modify it with your preferences. Then you can launch the client.
----
 ### Nothing's happening! ###
 ###### If nothing is happening, the server you specified might not work, the channel does not exist, or you have been blacklisted.
 ###### Other answer to this might be that some servers ban the usage of node IRC clients due to them being able to spam.
 ---
 ### I cannot answer PM's! ###
-###### For now, you can't. This feature might come another day.
-
+###### You can. Just type !pm "nick" "message". The prefix may vary based on what you set it in ircinfo.json.
+---
+### I am not on the server and channel I want! ###
+###### By default, ircinfo.json specifies the irc.freenode.net servers with the channel #freenode and the nickname Anonymous. You can change that in ircinfo.json.
+---
+### How do I customize the client more? ###
+###### You can change the real name in ircinfo.json, altough, there is a 9-character limit.
+###### You can also change the username to anything you want.
+---
+### How do I customize the client more? ###
+###### You can change the real name in ircinfo.json, altough, there is a 9-character limit.
+###### You can also change the username to anything you want.
+---
+### Anything else? ###
+###### Yes. There are commands for disconnecting, WHOIS, and PMs.
+###### But whatever you do, do NOT put spaces in your prefix. It breaks the commands
