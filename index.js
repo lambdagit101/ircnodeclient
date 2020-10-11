@@ -31,6 +31,15 @@ function sendmessage() {
 			console.log('Quitting...');
 			client.part(ircchannel);
 			process.exit();	
+		} else if (result.Message.toLowerCase().startsWith(`${prefix}pm`)) {
+			var args = result.Message.split(" ");
+			var person = args[1];
+			var message = args.splice(2, args.length);
+			client.say(person, message);
+		} else if (result.Message.toLowerCase().startsWith(`${prefix}whois`)) {
+			var arguments = result.Message.split(" ");
+			var target = arguments[1];
+			client.whois(target);
 		} else {
 			client.say(ircchannel, result.Message);
 		}
@@ -44,8 +53,12 @@ client.addListener('error', function(message) {
     console.log('An error occurred: ', message);
 });
 
+client.addListener('whois', function (info) {
+    console.log(info);
+});
+
 client.addListener('message', function (from, to, message) {
-    console.log(from + ': ' + message);
+    console.log(from + ' => ' + to + ': ' + message);
 });
 
 client.addListener('motd', function (motd) {
@@ -69,7 +82,7 @@ client.addListener('kick', function (channel, nick, by, reason, message) {
 });
 
 client.addListener('kill', function (nick, reason, channel, message) {
-    console.log(nick + ' was killed from ' + ircserver + '. Reason: ' + reason);
+    console.log(nick + ' was killed from ' + channel + '. Reason: ' + reason);
 });
 
 client.addListener('nick', function (oldnick, newnick, channels, message) {
